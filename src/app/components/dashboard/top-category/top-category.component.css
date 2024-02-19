@@ -1,0 +1,24 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 10px; /* Gap between grid items */
+  }
+  
+  .grid-item {
+    border-radius: 20px;
+    background-color: white;
+    border: 0.5px solid silver;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .logo 
+  {
+    transition: transform 300ms ease-in-out;
+  }
+
+  .logo:hover
+  {
+    transform: scale(1.05);
+  }
+  

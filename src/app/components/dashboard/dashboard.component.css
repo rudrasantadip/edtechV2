@@ -1,0 +1,95 @@
+
+
+.border
+{
+  border: 5px solid silver;
+}
+
+.heading 
+{
+    text-align: center;
+    margin-right: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sub-heading
+{
+    padding: 13px;
+}
+.image
+{
+    margin: 18px;
+}
+
+.image img
+{
+    border-radius: 25px;
+    width: 500px;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner
+{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.jump:hover
+{
+    cursor: pointer;
+}
+
+.reverse
+{
+    flex-direction: row-reverse;
+}
+
+.section
+{
+    margin-top: 24px;
+}
+
+
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing linear steps(20, end);
+  }
+
+  @keyframes typing {
+    0% {
+        width: 0;
+      }
+      50% {
+        width: 50%;
+      }
+      100% {
+        width: 100%;
+      }
+  }
+
+.content {
+    opacity: 0; /* Initially hide the content */
+    animation: fadeIn ease-in 1s forwards; /* Apply the fadeIn animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+    }
+  }
+
+@media (max-width: 950px)
+{
+  .root
+  {
+    margin-left: 100%;
+  }
+}

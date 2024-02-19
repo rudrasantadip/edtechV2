@@ -1,0 +1,20 @@
+.box
+{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.benefits ul li 
+{
+margin: 19px;
+font-weight: 500;
+}
+
+.image img
+{
+    width: 300px;
+    border-radius: 100px;
+}

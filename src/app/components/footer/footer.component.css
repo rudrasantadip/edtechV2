@@ -1,0 +1,43 @@
+.main
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul
+{
+    margin: 18px;
+    list-style: none;
+}
+
+ul li
+{
+    margin: 18px;
+}
+ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 12px;
+}
+
+ul li a:hover
+{
+    text-decoration: underline;
+}
+
+.bottom-image
+{
+    margin-top: 50px;
+    width: 100px;
+    border-radius: 100px;
+}

@@ -1,0 +1,141 @@
+.toolbar
+{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 200ms ease;
+    background-color: white;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+
+.ham
+{
+    display: none;
+}
+
+.border{
+    margin-left: 24px;
+    display: none;
+}
+
+
+/* Css for the page logo */
+.logo a img
+{
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.router-links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.router-links ul
+{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.router-links ul li a
+{
+    text-decoration: none;
+    color: black;
+    margin-left: 24px;
+   
+}
+
+.router-links ul li
+{
+    transition: transform .1s ease-in-out;
+}
+
+.router-links ul li:hover
+{
+    transform: scale(1.03);
+}
+
+.utils
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.utils button
+{
+    height: 50%;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 950px) {
+    .toolbar
+    {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+
+    .logo 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .border
+    {
+        margin-left: 0;
+    }
+
+    .utils
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .utils button{
+        height: 100%;
+    }
+
+    .router-links ul
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .router-links ul li
+    {
+        margin-top: 25px;
+    }
+
+    .router-links ul li a
+    {
+        margin-left: 0px;
+    }
+
+    .ham
+    {
+        display: block;
+        height: 50%;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+  }

@@ -1,0 +1,34 @@
+<div class="toolbar" [style.width]="toolbarSize()">
+  <!-- Organization Logo -->
+  <div class="logo">
+    <button (click)="shrinkMenu.set(!this.shrinkMenu())" class="ham btn btn-light"><i class="fa-solid fa-bars"></i></button>
+    <a routerLink="dashboard">
+        <img [width]="logoSize()" src="/assets/images/logo.png" alt="" />
+    </a>
+  </div>
+
+
+  <!-- New Links to be added here -->
+  <div class="router-links">
+    <ul>
+        <li>
+            <a routerLink="categories">Categories</a>
+        </li>
+        <li>
+            <a routerLink="teachwithus">Teach with us</a>
+        </li>
+        <li>
+            <a routerLink="about">Join our venture</a>
+        </li>
+        <li>
+            <a routerLink="about">About us</a>
+        </li>
+    </ul>
+  </div>
+
+  <!-- Action like loggin in or Admins and Students both -->
+  <div class="utils mb-2">
+    <button [style.width]="buttonSize()" class="btn btn-light">Signup <i class="fa-solid fa-arrow-right"></i></button>
+    <button [style.width]="buttonSize()" class="btn btn-primary ms-1 me-1">Login <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</div>
