@@ -1,0 +1,53 @@
+<main>
+    <!-- <section class="join-section" *ngIf="!callingService.callId()">
+      <div class="join-call-form">
+        <label for="location-search">Join call</label>
+        <input class="ms-2" id="location-search" #callId placeholder="Enter call id" />
+      </div>
+      <button class="join btn btn-primary" (click)="setCallId(callId.value)">Join Call</button>
+    </section>
+    <section *ngIf="callingService.call()">
+      <app-call [call]="callingService.call()!"></app-call>
+    </section> -->
+    <!-- <router-outlet /> -->
+</main>
+
+<div class="main">
+  <section class="left">
+    <h2>
+      Join in a private session,
+      with a teacher of your choice!
+    </h2>
+
+    <span>To Apply for a live session, please visit the "how to!" section to generate a joining code</span>
+
+    <section class="joining mt-2">
+      <button class=" join btn btn-primary me-2" ><i class="fa-solid fa-video me-2"></i>Join Meeting</button>
+      <input class="join-link form-control" type="text" placeholder="Enter Join Code..." aria-label="default input example">
+    </section>
+
+    <div class="option mt-2">
+      <label class="me-2" for="cars">Choose a subject:</label>
+    <select id="subject" name="subject">
+      <option value="physics">Physics</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="computer">Computer</option>
+    </select>
+    </div>
+
+    <button class="btn btn-outline-danger mt-3">Generate Code</button>
+    
+    <span class="help-text">
+    
+    </span>
+
+    <figcaption class="blockquote-footer help-text">
+      The Class Code will be sent to your registered mobile number
+      or email.
+    </figcaption>
+  </section>
+  <section class="right">
+    
+  </section>
+</div>

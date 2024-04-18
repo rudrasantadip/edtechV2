@@ -11,24 +11,15 @@
   <!-- New Links to be added here -->
   <div class="router-links">
     <ul>
-        <li>
-            <a routerLink="categories">Categories</a>
-        </li>
-        <li>
-            <a routerLink="teachwithus">Teach with us</a>
-        </li>
-        <li>
-            <a routerLink="about">Join our venture</a>
-        </li>
-        <li>
-            <a routerLink="about">About us</a>
+        <li  *ngFor="let navItem of standardNavbar">
+            <a [routerLink]="navItem.routerLink" routerLinkActive="active-link">{{navItem.item}}</a>
         </li>
     </ul>
   </div>
 
   <!-- Action like loggin in or Admins and Students both -->
   <div class="utils mb-2">
-    <button [style.width]="buttonSize()" class="btn btn-light">Signup <i class="fa-solid fa-arrow-right"></i></button>
-    <button [style.width]="buttonSize()" class="btn btn-primary ms-1 me-1">Login <i class="fa-solid fa-arrow-right"></i></button>
+    <button (click)="signup()" [style.width]="buttonSize()" [class]="widgets[1].color">{{widgets[1].text}}<i class="fa-solid fa-arrow-right"></i></button>
+    <button (click)="login()" [style.width]="buttonSize()" [class]="widgets[0].color" >{{widgets[0].text}}<i class="fa-solid fa-arrow-right"></i></button>
   </div>
 </div>

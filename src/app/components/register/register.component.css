@@ -1,0 +1,41 @@
+select
+{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+form
+{
+    padding: 12px;
+}
+
+.main
+{
+    width: 500px;
+    height: 500px;
+    border: 0.3px solid silver;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.top
+{
+    display: flex;
+    width: 100%;
+    border-bottom: 0.5px solid silver;
+    justify-content: center;
+}
+
+.heading
+{
+    display: flex;
+}
+
+.middle
+{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,34 @@
+:host {
+    flex: 1;
+  }
+  
+  .participant-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  p {
+    text-align: center;
+    font-size: smaller;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: white;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem 0 0 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }

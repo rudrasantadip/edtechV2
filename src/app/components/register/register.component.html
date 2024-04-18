@@ -1,0 +1,35 @@
+<div class="main">
+    <div class="top">
+        <div class="heading">
+         <h1>
+            Register
+         </h1>
+        </div>
+    </div>
+
+
+    <div class="middle">
+        <span class="m-2"><b>as</b></span>
+        <select (change)="onSelectChange($event)" name="" id="">
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select>
+    </div>
+
+
+    <div class="bottom">
+
+        <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+            <div class="form-floating mb-3">
+               <input name="email" ngModel required type="email" [class]="isEmailValid()?'form-control':'form-control is-invalid'" id="emailid" placeholder="name@example.com" value="">
+               <label for="emailid">Email*</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input name="password" ngModel required  type="password" [class]="isPasswordValid()?'form-control':'form-control is-invalid'" id="password" placeholder="Password">
+                <label for="password">Password*</label>
+              </div>
+              <button type="submit" style="display: block;margin: auto;width: 200px;height: 50px;" class="login btn btn-primary">Register</button>
+        </form>
+
+    </div>
+</div>
